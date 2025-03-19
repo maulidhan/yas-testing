@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">My<span>Portfolio</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Halo, Saya <span>Ilyas Maulidan</span></h1>
+        <p>Seorang Pelajar Web Developer & Desainer</p>
+        <a href="#projects" class="btn">Lihat Projek</a>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang pelajar pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
+        <p>Jika anda memerlukan bantuan saya,anda dapat menghubungi saya dengan kontak di bawah atau anda bisa mengirim email kepada saya.</p>
+    </section>
+
+    <!-- Projek -->
+    <section id="projects" class="projects">
+        <h2>Projek Saya</h2>
+        <div class="gallery">
+            <div class="image" onclick="openModal('images/project1.jpg')">
+                <img src="yas.jpg" alt="Project 1">
+            </div>
+            <div class="image" onclick="openModal('images/project2.jpg')">
+                <img src="yss.jpg" alt="Project 2">
+            </div>
+            <div class="image" onclick="openModal('images/project3.jpg')">
+                <img src="iyas.jpg" alt="Project 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+        <p>Email: yzzzdhan@gmail.com</p>
+        <p>Telepon: 083198646448</p>
+    </section>
+
+    <!-- Modal untuk gambar -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
